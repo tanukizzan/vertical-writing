@@ -9,7 +9,9 @@ html, body {
 }
 
 body {
-  /* background-image: url(./images/green.jfif); */
+  background-image: url(./images/green.jfif);
+  background-size: cover;
+  background-position: center;
   background-color: #00552e;
   font-family: 'Noto Serif JP', serif;
   color: #2f2725;
@@ -17,7 +19,6 @@ body {
   display: flex;
   min-height: 100vh;
   table-layout: fixed;
-  margin: auto;
   direction: rtl;
   writing-mode: vertical-rl;
   -webkit-writing-mode: vertical-rl;
@@ -25,11 +26,12 @@ body {
 
 /* 本文 */
 main {
-  /* background-image: url(./images/washi.jpg); */
+  background-image: url(./images/washi.jpg);
   background-color: white;
-  direction: ltr;
+  background-size: cover;
+  background-position: center;
   height: 18rem;
-  /* margin: 15%; */
+  direction: ltr;
   margin: auto 6rem;
   padding: 2.8rem;
 }
@@ -43,14 +45,13 @@ p, li {
   line-height: 1.6em;
 }
 
+p {
+  text-indent: 1em;
+}
+
 hr {
   border: 1px solid #2f2725;
   height: 100%;
-}
-
-.bold {
-  font-size: 1.2em;
-  font-weight: 800;
 }
 
 .upright {
@@ -59,6 +60,18 @@ hr {
 
 .upright2 {
   text-combine-upright: all;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+.linethrough {
+  text-decoration: line-through;
 }
 
 /* PC版CSS */

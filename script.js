@@ -14,14 +14,3 @@ $(function () {
     });
   }
 });
-
-jQuery(function($){
-  
-  var winH = $(window).height();
-  $('.box').outerHeight($(window).height());    
-  $(window).on('resize',function(){
-    winH = $(window).height();
-    $('.box').outerHeight(winH);
-  });
-  
-}); 
